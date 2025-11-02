@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Register.css';
+import { FaUserPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Register: React.FC = () => {
     const [nome,setNome] = useState("");
     const [senha,setSenha] = useState("");
@@ -31,11 +33,10 @@ const Register: React.FC = () => {
         }).catch(err => {
             console.error("Erro ao cadastrar usuário: ", err);
         });
-        // Aqui você pode adicionar a lógica para enviar os dados para o backend ou outro processamento necessário
     }
     return (
        <form onSubmit={handleSubmit} className='register-form'>
-            <h2>Register</h2>
+            <h2><FaUserPlus style={{fontSize:'2.1rem'}}/><span>Crie sua conta</span></h2>
             <div>
                 <label htmlFor="nome">Nome:</label>
                 <input type="text" id="nome" value={nome} onChange={(e) => setNome(e.target.value)} />  
@@ -48,7 +49,8 @@ const Register: React.FC = () => {
                 <label htmlFor="senha">Senha:</label>   
                 <input type="password" id="senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
             </div>
-            <button type="submit">Cadastrar</button> 
+            <button type="submit">Registrar</button> 
+            <p>Já tem conta? <Link to={'/login'}>Entre</Link> </p>
        </form>
     );
 }

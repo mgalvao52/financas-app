@@ -1,0 +1,199 @@
+.dashboard-container {
+    padding: 10px 10px 0 10px;
+    background-color: #333;
+    height: calc(100vh - 70px);
+    box-sizing: border-box;
+    display: flex;
+    /* grid-template-columns: 2fr; */
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    flex-direction: row;
+
+}
+.dashboard-center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.dashboard-sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* align-items: center; */
+    border-radius: inherit;
+    height: 100%;
+    height: calc(100vh - 80px);
+    gap: 10px;
+}
+.dashboard-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+.dashboard-card{
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    flex: 1;
+    /* min-width: 200px; */
+    min-width: 250px;
+    box-sizing: border-box;
+}
+.dashboard-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.dashboard-card p {
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.dashboard-transactions {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.dashboard-transactions h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color:
+    #333;
+    margin-bottom: 10px;
+}
+.dashboard-transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.dashboard-transactions-table th, .dashboard-transactions-table td {
+    padding: 2px;
+    text-align: left;
+    border-bottom: 1px solid #eee;    
+}
+
+
+.dashboard-advertisement {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: start;
+}
+.dashboard-advertisement h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-accounts {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.dasboard-accounts h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-categories {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}   
+
+.dashboard-categories h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-reports {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.dashboard-reports h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.dashboard-report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-categories-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.dashboard-categories-table th, .dashboard-categories-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;    
+}
+
+.dashboard-accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.dashboard-accounts-table th, .dashboard-accounts-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;    
+}
